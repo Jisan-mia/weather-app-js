@@ -10,7 +10,7 @@ document.getElementById('submit-btn').addEventListener('click', function(e){
     if(searchValue == ""){
         alert('Please enter your city name')
     } else{
-        fetch(` http://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=30c57aaa31356639f82849e3808f9f81 `)
+        fetch(` https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=30c57aaa31356639f82849e3808f9f81 `)
         .then(res => res.json())
         .then(data => {
             showDataOnUi(data)
