@@ -1,7 +1,5 @@
 const searchInput = document.getElementById('searchInput')
 
-const apiKey = '30c57aaa31356639f82849e3808f9f81'
-
 
 document.getElementById('submit-btn').addEventListener('click', function(e){
     e.preventDefault()
